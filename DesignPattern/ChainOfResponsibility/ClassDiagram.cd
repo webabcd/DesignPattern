@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Font Name="宋体" Size="9" />
+  <Comment CommentText="Message实体类">
+    <Position X="4.677" Y="2.688" Height="0.268" Width="1.023" />
+  </Comment>
+  <Comment CommentText="Sql方式操作Message">
+    <Position X="1.844" Y="1.573" Height="0.268" Width="1.346" />
+  </Comment>
+  <Comment CommentText="抽象处理者(Handler)角色">
+    <Position X="3.938" Y="4.886" Height="0.268" Width="1.721" />
+  </Comment>
+  <Comment CommentText="具体处理者&#xD;&#xA;(ConcreteHandler)&#xD;&#xA;角色">
+    <Position X="0.886" Y="6.948" Height="0.539" Width="1.294" />
+  </Comment>
+  <Comment CommentText="具体处理者&#xD;&#xA;(ConcreteHandler)&#xD;&#xA;角色">
+    <Position X="3.135" Y="6.948" Height="0.539" Width="1.294" />
+  </Comment>
+  <Comment CommentText="具体处理者&#xD;&#xA;(ConcreteHandler)&#xD;&#xA;角色">
+    <Position X="5.376" Y="6.948" Height="0.539" Width="1.294" />
+  </Comment>
+  <Class Name="DesignPattern.ChainOfResponsibility.AbstractExecutor">
+    <Position X="2.5" Y="3.25" Width="2.5" />
+    <TypeIdentifier>
+      <FileName>AbstractExecutor.cs</FileName>
+      <HashCode>AAAAAEAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAIAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPattern.ChainOfResponsibility.Employee">
+    <Position X="0.5" Y="5.75" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>Employee.cs</FileName>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <InheritanceLine Type="DesignPattern.ChainOfResponsibility.AbstractExecutor" FixedFromPoint="true">
+      <Path>
+        <Point X="3.688" Y="4.811" />
+        <Point X="3.688" Y="5.375" />
+        <Point X="1.375" Y="5.375" />
+        <Point X="1.375" Y="5.75" />
+      </Path>
+    </InheritanceLine>
+  </Class>
+  <Class Name="DesignPattern.ChainOfResponsibility.Leader">
+    <Position X="2.75" Y="5.75" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>Leader.cs</FileName>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <InheritanceLine Type="DesignPattern.ChainOfResponsibility.AbstractExecutor" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="3.688" Y="4.811" />
+        <Point X="3.688" Y="5.375" />
+        <Point X="3.688" Y="5.375" />
+        <Point X="3.688" Y="5.75" />
+      </Path>
+    </InheritanceLine>
+  </Class>
+  <Class Name="DesignPattern.ChainOfResponsibility.Manager">
+    <Position X="5" Y="5.75" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>Manager.cs</FileName>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <InheritanceLine Type="DesignPattern.ChainOfResponsibility.AbstractExecutor" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="3.688" Y="4.811" />
+        <Point X="3.688" Y="5.375" />
+        <Point X="5.875" Y="5.375" />
+        <Point X="5.875" Y="5.75" />
+      </Path>
+    </InheritanceLine>
+  </Class>
+  <Class Name="DesignPattern.ChainOfResponsibility.MessageModel">
+    <Position X="3.75" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <FileName>MessageModel.cs</FileName>
+      <HashCode>AAAEAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAIAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPattern.ChainOfResponsibility.SqlMessage">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>SqlMessage.cs</FileName>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+</ClassDiagram>

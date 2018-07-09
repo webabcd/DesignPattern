@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Font Name="宋体" Size="9" />
+  <Comment CommentText="泛型实现单例模式">
+    <Position X="0.969" Y="2.959" Height="0.268" Width="1.21" />
+  </Comment>
+  <Class Name="DesignPattern.Singleton.Singleton&lt;T&gt;">
+    <Position X="0.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>Singleton.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="DesignPattern.Singleton.Singleton&lt;T&gt;.SingletonCreator">
+        <TypeIdentifier>
+          <NewMemberFileName>Singleton.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+  </Class>
+</ClassDiagram>

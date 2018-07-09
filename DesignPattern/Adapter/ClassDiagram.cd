@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Font Name="宋体" Size="9" />
+  <Comment CommentText="Message实体类">
+    <Position X="2.917" Y="2.688" Height="0.268" Width="1.023" />
+  </Comment>
+  <Comment CommentText="目标（Target）">
+    <Position X="1.573" Y="4.49" Height="0.268" Width="1.096" />
+  </Comment>
+  <Comment CommentText="源（Adaptee）">
+    <Position X="4.605" Y="4.49" Height="0.268" Width="1.054" />
+  </Comment>
+  <Comment CommentText="类适配器">
+    <Position X="2.219" Y="6.615" Height="0.268" Width="0.7" />
+  </Comment>
+  <Comment CommentText="对象适配器">
+    <Position X="5.083" Y="7.052" Height="0.268" Width="0.825" />
+  </Comment>
+  <Class Name="DesignPattern.Adapter.Message">
+    <Position X="0.5" Y="5.25" Width="2.5" />
+    <TypeIdentifier>
+      <FileName>Message.cs</FileName>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <InheritanceLine Type="DesignPattern.Adapter.SqlMessage" FixedFromPoint="true">
+      <Path>
+        <Point X="4.188" Y="4.418" />
+        <Point X="4.188" Y="4.875" />
+        <Point X="1.75" Y="4.875" />
+        <Point X="1.75" Y="5.25" />
+      </Path>
+    </InheritanceLine>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DesignPattern.Adapter.Message2" BaseTypeListCollapsed="true">
+    <Position X="3.5" Y="5.25" Width="2.5" />
+    <TypeIdentifier>
+      <FileName>Message2.cs</FileName>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DesignPattern.Adapter.MessageModel">
+    <Position X="2" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <FileName>MessageModel.cs</FileName>
+      <HashCode>AAAEAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAIAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPattern.Adapter.SqlMessage">
+    <Position X="3.5" Y="3.25" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>SqlMessage.cs</FileName>
+      <HashCode>AAAAAEAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="DesignPattern.Adapter.IMessage">
+    <Position X="0.5" Y="3.25" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>IMessage.cs</FileName>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+</ClassDiagram>

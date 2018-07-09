@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Font Name="宋体" Size="9" />
+  <Comment CommentText="Xml方式操作Message">
+    <Position X="3.834" Y="1.738" Height="0.268" Width="1.347" />
+  </Comment>
+  <Comment CommentText="Message实体类">
+    <Position X="6.403" Y="2.689" Height="0.268" Width="1.023" />
+  </Comment>
+  <Comment CommentText="Sql方式操作Message">
+    <Position X="1.347" Y="1.742" Height="0.268" Width="1.336" />
+  </Comment>
+  <Comment CommentText="抽象Message&#xD;&#xA;  建造者&#xD;&#xA;（Builder）">
+    <Position X="0.802" Y="3.377" Height="0.516" Width="0.894" />
+  </Comment>
+  <Comment CommentText="操作（Product）">
+    <Position X="6.233" Y="5.7" Height="0.268" Width="1.185" />
+  </Comment>
+  <Comment CommentText=" SqlMessage建造者&#xD;&#xA;（ConcreteBuilder）">
+    <Position X="1.05" Y="6.043" Height="0.419" Width="1.4" />
+  </Comment>
+  <Comment CommentText="　指导者（Director）&#xD;&#xA;用于调用具体建造者角色&#xD;&#xA;　　以创建产品对象">
+    <Position X="5.83" Y="7.562" Height="0.516" Width="1.649" />
+  </Comment>
+  <Comment CommentText=" XmlMessage建造者&#xD;&#xA;（ConcreteBuilder）">
+    <Position X="3.285" Y="7.545" Height="0.419" Width="1.4" />
+  </Comment>
+  <Class Name="DesignPattern.Builder.AbstractMessageBuilder">
+    <Position X="1.75" Y="2.25" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>AbstractMessageBuilder.cs</FileName>
+      <HashCode>AAAAAAAAAAAABAAAAAAABAAAAAAAABAAAAEAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Operation" />
+    </ShowAsAssociation>
+    <AssociationLine Name="Operation" Type="DesignPattern.Builder.Operation" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="4" Y="3.062" />
+        <Point X="5.875" Y="3.062" />
+        <Point X="5.875" Y="3.5" />
+      </Path>
+    </AssociationLine>
+  </Class>
+  <Class Name="DesignPattern.Builder.Operation">
+    <Position X="4.25" Y="3.5" Width="3.25" />
+    <TypeIdentifier>
+      <FileName>Operation.cs</FileName>
+      <HashCode>AAAAAABAAAAAAAQACAAAAAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPattern.Builder.SqlMessageBuilder">
+    <Position X="0.5" Y="4.5" Width="2" />
+    <TypeIdentifier>
+      <FileName>SqlMessageBuilder.cs</FileName>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPattern.Builder.XmlMessageBuilder">
+    <Position X="2.75" Y="6" Width="2" />
+    <TypeIdentifier>
+      <FileName>XmlMessageBuilder.cs</FileName>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPattern.Builder.MessageModel">
+    <Position X="5.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <FileName>MessageModel.cs</FileName>
+      <HashCode>AAAEAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAIAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPattern.Builder.SqlMessage">
+    <Position X="0.5" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>SqlMessage.cs</FileName>
+      <HashCode>AAAAAEAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPattern.Builder.XmlMessage">
+    <Position X="3" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>XmlMessage.cs</FileName>
+      <HashCode>AAAAAEAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPattern.Builder.Message">
+    <Position X="5.75" Y="6.5" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>Message.cs</FileName>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+</ClassDiagram>

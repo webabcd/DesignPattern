@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Font Name="宋体" Size="9" />
+  <Comment CommentText="Message实体类">
+    <Position X="3.166" Y="2.688" Height="0.268" Width="1.023" />
+  </Comment>
+  <Comment CommentText="迭代器（Iterator）">
+    <Position X="4.833" Y="8.615" Height="0.268" Width="1.346" />
+  </Comment>
+  <Comment CommentText="集合（ConcreteAggregate）">
+    <Position X="1.125" Y="7.021" Height="0.268" Width="1.804" />
+  </Comment>
+  <Comment CommentText="迭代器接口（IIterator）">
+    <Position X="4.531" Y="5.053" Height="0.268" Width="1.658" />
+  </Comment>
+  <Comment CommentText="集合接口（Aggregate）">
+    <Position X="1.385" Y="4.323" Height="0.268" Width="1.523" />
+  </Comment>
+  <Class Name="DesignPattern.Iterator.MessageModel">
+    <Position X="2.25" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <FileName>MessageModel.cs</FileName>
+      <HashCode>AAAEAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAIAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPattern.Iterator.Collection">
+    <Position X="0.5" Y="5" Width="2.5" />
+    <TypeIdentifier>
+      <FileName>Collection.cs</FileName>
+      <HashCode>AAAAAgAAAAAAAAACCAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DesignPattern.Iterator.Iterator">
+    <Position X="3.5" Y="5.75" Width="2.75" />
+    <TypeIdentifier>
+      <FileName>Iterator.cs</FileName>
+      <HashCode>AgAAICAAAAAAAUAAAAAAAAAAAAAAAAAAIAAABAACAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="DesignPattern.Iterator.ICollection">
+    <Position X="0.5" Y="3.25" Width="2.5" />
+    <TypeIdentifier>
+      <FileName>ICollection.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="DesignPattern.Iterator.IIterator">
+    <Position X="3.5" Y="3.25" Width="2.75" />
+    <TypeIdentifier>
+      <FileName>IIterator.cs</FileName>
+      <HashCode>AgAAACAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAACAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+</ClassDiagram>

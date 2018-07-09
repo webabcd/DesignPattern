@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Font Name="宋体" Size="9" />
+  <Comment CommentText="Message实体类">
+    <Position X="2.656" Y="2.688" Height="0.268" Width="1.023" />
+  </Comment>
+  <Comment CommentText="操作Message抽象类&#xD;&#xA;  （Colleague）">
+    <Position X="3.103" Y="9.605" Height="0.414" Width="1.304" />
+  </Comment>
+  <Comment CommentText="中介者（ConcreteMediator）">
+    <Position X="2.531" Y="6.75" Height="0.268" Width="1.888" />
+  </Comment>
+  <Comment CommentText=" 抽象中介者&#xD;&#xA;（Mediator）">
+    <Position X="3.572" Y="4.219" Height="0.383" Width="0.95" />
+  </Comment>
+  <Comment CommentText=" Sql方式操作Message&#xD;&#xA;（ConcreteColleague）">
+    <Position X="0.635" Y="11.855" Height="0.383" Width="1.554" />
+  </Comment>
+  <Comment CommentText=" Xml方式操作Message&#xD;&#xA;（ConcreteColleague）">
+    <Position X="3.145" Y="11.855" Height="0.383" Width="1.554" />
+  </Comment>
+  <Class Name="DesignPattern.Mediator.AbstractMessage">
+    <Position X="0.75" Y="7.25" Width="3.75" />
+    <TypeIdentifier>
+      <FileName>AbstractMessage.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAEAgAAiAAAAAAAAYAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="AbstractMessageMediator" />
+    </ShowAsAssociation>
+    <AssociationLine Name="AbstractMessageMediator" Type="DesignPattern.Mediator.AbstractMessageMediator" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="0.75" Y="7.562" />
+        <Point X="0.375" Y="7.562" />
+        <Point X="0.375" Y="3.125" />
+        <Point X="2.625" Y="3.125" />
+        <Point X="2.625" Y="3.5" />
+      </Path>
+    </AssociationLine>
+  </Class>
+  <Class Name="DesignPattern.Mediator.AbstractMessageMediator">
+    <Position X="1.75" Y="3.5" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>AbstractMessageMediator.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPattern.Mediator.MessageMediator">
+    <Position X="0.75" Y="5" Width="3.75" />
+    <TypeIdentifier>
+      <FileName>MessageMediator.cs</FileName>
+      <HashCode>AAAAAABAAAAAAAAAAEAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPattern.Mediator.MessageModel">
+    <Position X="1.5" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>MessageModel.cs</FileName>
+      <HashCode>AAAEAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAIAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPattern.Mediator.SqlMessage">
+    <Position X="0.5" Y="10.5" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>SqlMessage.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPattern.Mediator.XmlMessage">
+    <Position X="3" Y="10.5" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>XmlMessage.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+</ClassDiagram>

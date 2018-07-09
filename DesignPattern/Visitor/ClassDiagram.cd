@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Font Name="宋体" Size="9" />
+  <Comment CommentText="Message实体类">
+    <Position X="2.896" Y="2.677" Height="0.268" Width="1.023" />
+  </Comment>
+  <Comment CommentText="Message集合（ObjectStructure）">
+    <Position X="1.823" Y="12.042" Height="0.268" Width="2.106" />
+  </Comment>
+  <Comment CommentText=" 抽象元素&#xD;&#xA;（Element）">
+    <Position X="3.823" Y="3.802" Height="0.362" Width="0.898" />
+  </Comment>
+  <Comment CommentText="抽象访问者&#xD;&#xA;（Visitor）">
+    <Position X="3.823" Y="13.02" Height="0.414" Width="0.898" />
+  </Comment>
+  <Comment CommentText="    操作Message抽象类&#xD;&#xA;（AbstractConcreteElement）">
+    <Position X="3.01" Y="6.844" Height="0.393" Width="1.919" />
+  </Comment>
+  <Comment CommentText="   Insert访问者&#xD;&#xA;（ConcreteVisitor）">
+    <Position X="1.292" Y="15.448" Height="0.414" Width="1.408" />
+  </Comment>
+  <Comment CommentText="     Get访问者&#xD;&#xA;（ConcreteVisitor）">
+    <Position X="3.292" Y="15.448" Height="0.414" Width="1.408" />
+  </Comment>
+  <Comment CommentText="Sql方式操作Message&#xD;&#xA;（ConcreteElement）">
+    <Position X="1.281" Y="9.521" Height="0.362" Width="1.398" />
+  </Comment>
+  <Comment CommentText="Xml方式操作Message&#xD;&#xA;（ConcreteElement）">
+    <Position X="3.792" Y="9.521" Height="0.362" Width="1.398" />
+  </Comment>
+  <Class Name="DesignPattern.Visitor.AbstractElement">
+    <Position X="2" Y="3.25" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>AbstractElement.cs</FileName>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPattern.Visitor.AbstractVisitor">
+    <Position X="2" Y="12.5" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>AbstractVisitor.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPattern.Visitor.GetVisitor">
+    <Position X="3" Y="14.25" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>GetVisitor.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPattern.Visitor.InsertVisitor">
+    <Position X="1" Y="14.25" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>InsertVisitor.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPattern.Visitor.Message">
+    <Position X="1.5" Y="4.75" Width="2.75" />
+    <TypeIdentifier>
+      <FileName>Message.cs</FileName>
+      <HashCode>AIAAAECAAAAAAABCAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="MessageModel" />
+    </ShowAsAssociation>
+    <AssociationLine Name="MessageModel" Type="DesignPattern.Visitor.MessageModel" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="1.5" Y="5.062" />
+        <Point X="1.125" Y="5.062" />
+        <Point X="1.125" Y="0.812" />
+        <Point X="1.75" Y="0.812" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.102" Y="0.027" />
+      </MemberNameLabel>
+    </AssociationLine>
+  </Class>
+  <Class Name="DesignPattern.Visitor.MessageModel">
+    <Position X="1.75" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>MessageModel.cs</FileName>
+      <HashCode>AAAEAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAIAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPattern.Visitor.Messages">
+    <Position X="1.75" Y="10.25" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>Messages.cs</FileName>
+      <HashCode>AIAAAAAAAAAAAAIAAAAAAAAAAIAAAAAAQAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPattern.Visitor.SqlMessage">
+    <Position X="0.5" Y="8" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>SqlMessage.cs</FileName>
+      <HashCode>AAAAAEAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPattern.Visitor.XmlMessage">
+    <Position X="3" Y="8" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>XmlMessage.cs</FileName>
+      <HashCode>AAAAAEAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+</ClassDiagram>

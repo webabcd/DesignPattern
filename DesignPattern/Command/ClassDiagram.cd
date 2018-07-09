@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Font Name="宋体" Size="9" />
+  <Comment CommentText="Message实体类">
+    <Position X="4.396" Y="2.698" Height="0.268" Width="1.023" />
+  </Comment>
+  <Comment CommentText="请求者（Invoker）角色">
+    <Position X="1.396" Y="2.48" Height="0.268" Width="1.523" />
+  </Comment>
+  <Comment CommentText="命令（Command）角色">
+    <Position X="1.25" Y="4.25" Height="0.268" Width="1.398" />
+  </Comment>
+  <Comment CommentText="具体命令（ConcreteCommand）角色">
+    <Position X="0.552" Y="7.135" Height="0.268" Width="2.179" />
+  </Comment>
+  <Comment CommentText="接收者（Receiver）角色">
+    <Position X="3.854" Y="6.406" Height="0.268" Width="1.606" />
+  </Comment>
+  <Comment CommentText="定义操作的两种方法">
+    <Position X="3.906" Y="4.292" Height="0.268" Width="1.335" />
+  </Comment>
+  <Class Name="DesignPattern.Command.Message">
+    <Position X="0.5" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <FileName>Message.cs</FileName>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAABiAAAAAAAAAAAAAgAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPattern.Command.MessageModel">
+    <Position X="3.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <FileName>MessageModel.cs</FileName>
+      <HashCode>AAAEAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAIAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPattern.Command.SqlMessage">
+    <Position X="3.75" Y="5" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>SqlMessage.cs</FileName>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAEAAAAAAAEAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+  </Class>
+  <Class Name="DesignPattern.Command.SqlMessageCommand" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="5" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>SqlMessageCommand.cs</FileName>
+      <HashCode>AAAAwAEAAAAAAAQAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="DesignPattern.Command.ICommand">
+    <Position X="0.5" Y="3" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>ICommand.cs</FileName>
+      <HashCode>AAAAgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="DesignPattern.Command.Action">
+    <Position X="3.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Action.cs</FileName>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+</ClassDiagram>

@@ -1,0 +1,543 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{0183966D-F30D-49E8-8CAF-7C7773E1D3B4}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DesignPattern</RootNamespace>
+    <AssemblyName>DesignPattern</AssemblyName>
+    <DefaultLanguage>zh-CN</DefaultLanguage>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.17134.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.15063.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WindowsXamlEnableOverview>true</WindowsXamlEnableOverview>
+    <PackageCertificateKeyFile>DesignPattern_TemporaryKey.pfx</PackageCertificateKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AbstractFactory\AbstractInsertMessage.cs" />
+    <Compile Include="AbstractFactory\AbstractMessage.cs" />
+    <Compile Include="AbstractFactory\AbstractMessageFactory.cs" />
+    <Compile Include="AbstractFactory\AbstractMessageModel.cs" />
+    <Compile Include="AbstractFactory\Demo.xaml.cs">
+      <DependentUpon>Demo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AbstractFactory\Message.cs" />
+    <Compile Include="AbstractFactory\SqlInsertMessage.cs" />
+    <Compile Include="AbstractFactory\SqlMessage.cs" />
+    <Compile Include="AbstractFactory\SqlMessageFactory.cs" />
+    <Compile Include="AbstractFactory\SqlMessageModel.cs" />
+    <Compile Include="AbstractFactory\XmlInsertMessage.cs" />
+    <Compile Include="AbstractFactory\XmlMessage.cs" />
+    <Compile Include="AbstractFactory\XmlMessageFactory.cs" />
+    <Compile Include="AbstractFactory\XmlMessageModel.cs" />
+    <Compile Include="Adapter\Demo.xaml.cs">
+      <DependentUpon>Demo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Adapter\IMessage.cs" />
+    <Compile Include="Adapter\Message.cs" />
+    <Compile Include="Adapter\Message2.cs" />
+    <Compile Include="Adapter\MessageModel.cs" />
+    <Compile Include="Adapter\SqlMessage.cs" />
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Bridge\AbstractMessage.cs" />
+    <Compile Include="Bridge\Demo.xaml.cs">
+      <DependentUpon>Demo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Bridge\Message.cs" />
+    <Compile Include="Bridge\MessageModel.cs" />
+    <Compile Include="Bridge\MyMessage.cs" />
+    <Compile Include="Bridge\SqlMessage.cs" />
+    <Compile Include="Bridge\XmlMessage.cs" />
+    <Compile Include="Builder\AbstractMessageBuilder.cs" />
+    <Compile Include="Builder\Demo.xaml.cs">
+      <DependentUpon>Demo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Builder\Message.cs" />
+    <Compile Include="Builder\MessageModel.cs" />
+    <Compile Include="Builder\Operation.cs" />
+    <Compile Include="Builder\SqlMessage.cs" />
+    <Compile Include="Builder\SqlMessageBuilder.cs" />
+    <Compile Include="Builder\XmlMessage.cs" />
+    <Compile Include="Builder\XmlMessageBuilder.cs" />
+    <Compile Include="ChainOfResponsibility\AbstractExecutor.cs" />
+    <Compile Include="ChainOfResponsibility\Demo.xaml.cs">
+      <DependentUpon>Demo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ChainOfResponsibility\Employee.cs" />
+    <Compile Include="ChainOfResponsibility\Leader.cs" />
+    <Compile Include="ChainOfResponsibility\Manager.cs" />
+    <Compile Include="ChainOfResponsibility\MessageModel.cs" />
+    <Compile Include="ChainOfResponsibility\SqlMessage.cs" />
+    <Compile Include="Command\Action.cs" />
+    <Compile Include="Command\Demo.xaml.cs">
+      <DependentUpon>Demo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Command\ICommand.cs" />
+    <Compile Include="Command\Message.cs" />
+    <Compile Include="Command\MessageModel.cs" />
+    <Compile Include="Command\SqlMessage.cs" />
+    <Compile Include="Command\SqlMessageCommand.cs" />
+    <Compile Include="Common\Helper.cs" />
+    <Compile Include="Common\MyExtensions.cs" />
+    <Compile Include="Composite\Demo.xaml.cs">
+      <DependentUpon>Demo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Composite\MessageModel.cs" />
+    <Compile Include="Composite\MessageModelComponent.cs" />
+    <Compile Include="Composite\MessageModelComposite.cs" />
+    <Compile Include="Composite\MessageModelLeaf.cs" />
+    <Compile Include="Decorator\AbstractMessage.cs" />
+    <Compile Include="Decorator\AbstractMessageWrapper.cs" />
+    <Compile Include="Decorator\CheckInputWrapper.cs" />
+    <Compile Include="Decorator\CheckUserWrapper.cs" />
+    <Compile Include="Decorator\Demo.xaml.cs">
+      <DependentUpon>Demo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Decorator\MessageModel.cs" />
+    <Compile Include="Decorator\SqlMessage.cs" />
+    <Compile Include="Decorator\XmlMessage.cs" />
+    <Compile Include="Facade\Demo.xaml.cs">
+      <DependentUpon>Demo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Facade\Message.cs" />
+    <Compile Include="Facade\MessageModel.cs" />
+    <Compile Include="Facade\SqlMessage.cs" />
+    <Compile Include="Facade\User.cs" />
+    <Compile Include="FactoryMethod\AbstractMessage.cs" />
+    <Compile Include="FactoryMethod\AbstractMessageFactory.cs" />
+    <Compile Include="FactoryMethod\Demo.xaml.cs">
+      <DependentUpon>Demo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FactoryMethod\MessageModel.cs" />
+    <Compile Include="FactoryMethod\SqlMessage.cs" />
+    <Compile Include="FactoryMethod\SqlMessageFactory.cs" />
+    <Compile Include="FactoryMethod\XmlMessage.cs" />
+    <Compile Include="FactoryMethod\XmlMessageFactory.cs" />
+    <Compile Include="Flyweight\AbstractMessage.cs" />
+    <Compile Include="Flyweight\Demo.xaml.cs">
+      <DependentUpon>Demo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Flyweight\MessageFactory.cs" />
+    <Compile Include="Flyweight\MessageModel.cs" />
+    <Compile Include="Flyweight\SqlMessage.cs" />
+    <Compile Include="Flyweight\XmlMessage.cs" />
+    <Compile Include="Index.xaml.cs">
+      <DependentUpon>Index.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Interpreter\AbstractExpression.cs" />
+    <Compile Include="Interpreter\Context.cs" />
+    <Compile Include="Interpreter\DatabaseExpression.cs" />
+    <Compile Include="Interpreter\Demo.xaml.cs">
+      <DependentUpon>Demo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Interpreter\MessageModel.cs" />
+    <Compile Include="Interpreter\MethodExpression.cs" />
+    <Compile Include="Interpreter\ObjectExpression.cs" />
+    <Compile Include="Interpreter\SqlMessage.cs" />
+    <Compile Include="Iterator\Collection.cs" />
+    <Compile Include="Iterator\Demo.xaml.cs">
+      <DependentUpon>Demo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Iterator\ICollection.cs" />
+    <Compile Include="Iterator\IIterator.cs" />
+    <Compile Include="Iterator\Iterator.cs" />
+    <Compile Include="Iterator\MessageModel.cs" />
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Mediator\AbstractMessage.cs" />
+    <Compile Include="Mediator\AbstractMessageMediator.cs" />
+    <Compile Include="Mediator\Demo.xaml.cs">
+      <DependentUpon>Demo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Mediator\MessageMediator.cs" />
+    <Compile Include="Mediator\MessageModel.cs" />
+    <Compile Include="Mediator\SqlMessage.cs" />
+    <Compile Include="Mediator\XmlMessage.cs" />
+    <Compile Include="Memento\Demo.xaml.cs">
+      <DependentUpon>Demo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Memento\MessageModel.cs" />
+    <Compile Include="Memento\MessageModelCaretaker.cs" />
+    <Compile Include="Memento\SqlMessage.cs" />
+    <Compile Include="Observer\AbstractMessageSubject.cs" />
+    <Compile Include="Observer\Demo.xaml.cs">
+      <DependentUpon>Demo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Observer\IMessage.cs" />
+    <Compile Include="Observer\MessageModel.cs" />
+    <Compile Include="Observer\MessageSubject.cs" />
+    <Compile Include="Observer\SqlMessage.cs" />
+    <Compile Include="Observer\XmlMessage.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Prototype\DeepCopy.cs" />
+    <Compile Include="Prototype\Demo.xaml.cs">
+      <DependentUpon>Demo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Prototype\ICloneable.cs" />
+    <Compile Include="Prototype\MessageModel.cs" />
+    <Compile Include="Prototype\ShallowCopy.cs" />
+    <Compile Include="Proxy\Demo.xaml.cs">
+      <DependentUpon>Demo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Proxy\IMessage.cs" />
+    <Compile Include="Proxy\MessageModel.cs" />
+    <Compile Include="Proxy\MessageProxy.cs" />
+    <Compile Include="Proxy\SqlMessage.cs" />
+    <Compile Include="Singleton\Demo.xaml.cs">
+      <DependentUpon>Demo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Singleton\Singleton.cs" />
+    <Compile Include="State\AbstractMessageState.cs" />
+    <Compile Include="State\Demo.xaml.cs">
+      <DependentUpon>Demo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="State\Message.cs" />
+    <Compile Include="State\MessageModel.cs" />
+    <Compile Include="State\SqlMessage.cs" />
+    <Compile Include="State\XmlMessage.cs" />
+    <Compile Include="Strategy\Demo.xaml.cs">
+      <DependentUpon>Demo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Strategy\IMessageStrategy.cs" />
+    <Compile Include="Strategy\Message.cs" />
+    <Compile Include="Strategy\MessageModel.cs" />
+    <Compile Include="Strategy\SqlMessage.cs" />
+    <Compile Include="Strategy\XmlMessage.cs" />
+    <Compile Include="TemplateMethod\AbstractMessageTemplate.cs" />
+    <Compile Include="TemplateMethod\Demo.xaml.cs">
+      <DependentUpon>Demo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TemplateMethod\MessageModel.cs" />
+    <Compile Include="TemplateMethod\SqlMessage.cs" />
+    <Compile Include="TemplateMethod\XmlMessage.cs" />
+    <Compile Include="Visitor\AbstractElement.cs" />
+    <Compile Include="Visitor\AbstractVisitor.cs" />
+    <Compile Include="Visitor\Demo.xaml.cs">
+      <DependentUpon>Demo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Visitor\GetVisitor.cs" />
+    <Compile Include="Visitor\InsertVisitor.cs" />
+    <Compile Include="Visitor\Message.cs" />
+    <Compile Include="Visitor\MessageModel.cs" />
+    <Compile Include="Visitor\Messages.cs" />
+    <Compile Include="Visitor\SqlMessage.cs" />
+    <Compile Include="Visitor\XmlMessage.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <None Include="AbstractFactory\ClassDiagram.cd" />
+    <None Include="Adapter\ClassDiagram.cd" />
+    <None Include="Bridge\ClassDiagram.cd" />
+    <None Include="Builder\ClassDiagram.cd" />
+    <None Include="ChainOfResponsibility\ClassDiagram.cd" />
+    <None Include="Command\ClassDiagram.cd" />
+    <None Include="Composite\ClassDiagram.cd" />
+    <None Include="Decorator\ClassDiagram.cd" />
+    <None Include="DesignPattern_TemporaryKey.pfx" />
+    <None Include="Facade\ClassDiagram.cd" />
+    <None Include="FactoryMethod\ClassDiagram.cd" />
+    <None Include="Flyweight\ClassDiagram.cd" />
+    <None Include="Interpreter\ClassDiagram.cd" />
+    <None Include="Iterator\ClassDiagram.cd" />
+    <None Include="Mediator\ClassDiagram.cd" />
+    <None Include="Memento\ClassDiagram.cd" />
+    <None Include="Observer\ClassDiagram.cd" />
+    <None Include="Prototype\ClassDiagram.cd" />
+    <None Include="Proxy\ClassDiagram.cd" />
+    <None Include="Singleton\ClassDiagram.cd" />
+    <None Include="State\ClassDiagram.cd" />
+    <None Include="Strategy\ClassDiagram.cd" />
+    <None Include="TemplateMethod\ClassDiagram.cd" />
+    <None Include="Visitor\ClassDiagram.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AbstractFactory\ClassDiagram.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Adapter\ClassDiagram.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bridge\ClassDiagram.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Builder\ClassDiagram.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ChainOfResponsibility\ClassDiagram.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Command\ClassDiagram.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Composite\ClassDiagram.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Decorator\ClassDiagram.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Facade\ClassDiagram.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="FactoryMethod\ClassDiagram.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Flyweight\ClassDiagram.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Interpreter\ClassDiagram.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Iterator\ClassDiagram.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Mediator\ClassDiagram.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Memento\ClassDiagram.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Observer\ClassDiagram.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Prototype\ClassDiagram.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Proxy\ClassDiagram.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Singleton\ClassDiagram.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="State\ClassDiagram.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategy\ClassDiagram.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemplateMethod\ClassDiagram.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Visitor\ClassDiagram.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Properties\Default.rd.xml" />
+    <Content Include="Assets\LockScreenLogo.scale-200.png" />
+    <Content Include="Assets\SplashScreen.scale-200.png" />
+    <Content Include="Assets\Square150x150Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Content Include="Assets\StoreLogo.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-200.png" />
+    <Content Include="SiteMap.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="AbstractFactory\Demo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Adapter\Demo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Bridge\Demo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Builder\Demo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ChainOfResponsibility\Demo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Command\Demo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Common\StandardStyles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Composite\Demo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Decorator\Demo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Facade\Demo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FactoryMethod\Demo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Flyweight\Demo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Index.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Interpreter\Demo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Iterator\Demo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Mediator\Demo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Memento\Demo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Observer\Demo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Prototype\Demo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Proxy\Demo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Singleton\Demo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="State\Demo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Strategy\Demo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TemplateMethod\Demo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Visitor\Demo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
+      <Version>6.1.5</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
+    <VisualStudioVersion>14.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Font Name="宋体" Size="9" />
+  <Comment CommentText="Message实体类">
+    <Position X="3.396" Y="2.688" Height="0.268" Width="1.023" />
+  </Comment>
+  <Comment CommentText=" 操作Message（Abstraction）">
+    <Position X="1.25" Y="4.875" Height="0.268" Width="1.908" />
+  </Comment>
+  <Comment CommentText="操作Message（RefinedAbstraction）">
+    <Position X="3.99" Y="4.448" Height="0.268" Width="2.336" />
+  </Comment>
+  <Comment CommentText="　操作Message&#xD;&#xA;（Implementor）">
+    <Position X="4.584" Y="5.948" Height="0.393" Width="1.158" />
+  </Comment>
+  <Comment CommentText="  Xml方式操作Message&#xD;&#xA;（ConcreteImplementor）">
+    <Position X="4.282" Y="8.365" Height="0.372" Width="1.648" />
+  </Comment>
+  <Comment CommentText="  Sql方式操作Message&#xD;&#xA;（ConcreteImplementor）">
+    <Position X="1.302" Y="8.365" Height="0.362" Width="1.648" />
+  </Comment>
+  <Class Name="DesignPattern.Bridge.Message">
+    <Position X="0.5" Y="3.25" Width="2.75" />
+    <TypeIdentifier>
+      <FileName>Message.cs</FileName>
+      <HashCode>AAAAAEAAAAAAAABEAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="AbstractMessage" />
+    </ShowAsAssociation>
+    <AssociationLine Name="AbstractMessage" Type="DesignPattern.Bridge.AbstractMessage" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="0.938" Y="4.811" />
+        <Point X="0.938" Y="5.562" />
+        <Point X="2.25" Y="5.562" />
+      </Path>
+    </AssociationLine>
+  </Class>
+  <Class Name="DesignPattern.Bridge.MessageModel">
+    <Position X="2.25" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>MessageModel.cs</FileName>
+      <HashCode>AAAEAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAIAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPattern.Bridge.MyMessage">
+    <Position X="4" Y="3.25" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>MyMessage.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPattern.Bridge.SqlMessage" BaseTypeListCollapsed="true">
+    <Position X="0.75" Y="7" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>SqlMessage.cs</FileName>
+      <HashCode>AAAAAEAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <InheritanceLine Type="DesignPattern.Bridge.AbstractMessage" ManuallyRouted="true">
+      <Path>
+        <Point X="3.375" Y="6.418" />
+        <Point X="3.375" Y="6.74" />
+        <Point X="1.875" Y="6.74" />
+        <Point X="1.875" Y="7" />
+      </Path>
+    </InheritanceLine>
+  </Class>
+  <Class Name="DesignPattern.Bridge.XmlMessage" BaseTypeListCollapsed="true">
+    <Position X="3.75" Y="7" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>XmlMessage.cs</FileName>
+      <HashCode>AAAAAEAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <InheritanceLine Type="DesignPattern.Bridge.AbstractMessage" ManuallyRouted="true">
+      <Path>
+        <Point X="3.375" Y="6.418" />
+        <Point X="3.375" Y="6.74" />
+        <Point X="4.875" Y="6.74" />
+        <Point X="4.875" Y="7" />
+      </Path>
+    </InheritanceLine>
+  </Class>
+  <Class Name="DesignPattern.Bridge.AbstractMessage">
+    <Position X="2.25" Y="5.25" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>AbstractMessage.cs</FileName>
+      <HashCode>AAAAAEAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+</ClassDiagram>

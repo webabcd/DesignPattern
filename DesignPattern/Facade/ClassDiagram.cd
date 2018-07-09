@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Font Name="宋体" Size="9" />
+  <Comment CommentText="Message实体类">
+    <Position X="2.906" Y="2.688" Height="0.268" Width="1.023" />
+  </Comment>
+  <Comment CommentText="有一个获取Message的方法">
+    <Position X="1.291" Y="6.563" Height="0.268" Width="1.648" />
+  </Comment>
+  <Comment CommentText="有一个验证用户的方法">
+    <Position X="3.708" Y="6.563" Height="0.268" Width="1.471" />
+  </Comment>
+  <Comment CommentText="Get()方法&#xD;&#xA;封装了&#xD;&#xA;User类的&#xD;&#xA;验证用户的方法&#xD;&#xA;和&#xD;&#xA;SqlMessage类的&#xD;&#xA;获取Message的方法">
+    <Position X="4.073" Y="3.855" Height="1.133" Width="1.294" />
+  </Comment>
+  <Class Name="DesignPattern.Facade.Message">
+    <Position X="1.75" Y="3.5" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>Message.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPattern.Facade.MessageModel">
+    <Position X="1.75" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>MessageModel.cs</FileName>
+      <HashCode>AAAEAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAIAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPattern.Facade.SqlMessage">
+    <Position X="0.75" Y="5.5" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>SqlMessage.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPattern.Facade.User">
+    <Position X="3.5" Y="5.5" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>User.cs</FileName>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+</ClassDiagram>

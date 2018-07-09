@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Font Name="宋体" Size="9" />
+  <Comment CommentText="Message实体类">
+    <Position X="3.146" Y="2.688" Height="0.268" Width="1.023" />
+  </Comment>
+  <Comment CommentText="操作Message的抽象构件&#xD;&#xA;    （Component）">
+    <Position X="4.333" Y="3.948" Height="0.393" Width="1.523" />
+  </Comment>
+  <Comment CommentText="装饰AbstractMessage&#xD;&#xA;   （Decorator）">
+    <Position X="4.583" Y="8.365" Height="0.414" Width="1.419" />
+  </Comment>
+  <Comment CommentText=" Sql方式操作Message&#xD;&#xA;（ConcreteComponent）">
+    <Position X="1.115" Y="6.365" Height="0.414" Width="1.554" />
+  </Comment>
+  <Comment CommentText=" Xml方式操作Message&#xD;&#xA;（ConcreteComponent）">
+    <Position X="4.135" Y="6.365" Height="0.414" Width="1.554" />
+  </Comment>
+  <Comment CommentText="扩展出用户验证的功能&#xD;&#xA;（ConcreteDecorator）">
+    <Position X="1.104" Y="11.032" Height="0.414" Width="1.575" />
+  </Comment>
+  <Comment CommentText="扩展出输入验证的功能&#xD;&#xA;（ConcreteDecorator）">
+    <Position X="4.114" Y="11.032" Height="0.414" Width="1.575" />
+  </Comment>
+  <Class Name="DesignPattern.Decorator.AbstractMessage">
+    <Position X="2" Y="3.25" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>AbstractMessage.cs</FileName>
+      <HashCode>AAAAAEAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPattern.Decorator.MessageModel">
+    <Position X="2" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>MessageModel.cs</FileName>
+      <HashCode>AAAEAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAIAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPattern.Decorator.AbstractMessageWrapper">
+    <Position X="1.75" Y="7" Width="2.75" />
+    <TypeIdentifier>
+      <FileName>AbstractMessageWrapper.cs</FileName>
+      <HashCode>AAAAAEAAAAAAAABEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPattern.Decorator.SqlMessage">
+    <Position X="0.5" Y="5" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>SqlMessage.cs</FileName>
+      <HashCode>AAAAAEAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <InheritanceLine Type="DesignPattern.Decorator.AbstractMessage" ManuallyRouted="true">
+      <Path>
+        <Point X="3.125" Y="4.418" />
+        <Point X="3.125" Y="4.706" />
+        <Point X="1.625" Y="4.706" />
+        <Point X="1.625" Y="5" />
+      </Path>
+    </InheritanceLine>
+  </Class>
+  <Class Name="DesignPattern.Decorator.XmlMessage">
+    <Position X="3.5" Y="5" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>XmlMessage.cs</FileName>
+      <HashCode>AAAAAEAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <InheritanceLine Type="DesignPattern.Decorator.AbstractMessage" ManuallyRouted="true">
+      <Path>
+        <Point X="3.125" Y="4.418" />
+        <Point X="3.125" Y="4.706" />
+        <Point X="4.625" Y="4.706" />
+        <Point X="4.625" Y="5" />
+      </Path>
+    </InheritanceLine>
+  </Class>
+  <Class Name="DesignPattern.Decorator.CheckUserWrapper">
+    <Position X="0.5" Y="9.5" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>CheckUserWrapper.cs</FileName>
+      <HashCode>AAAAAEAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPattern.Decorator.CheckInputWrapper">
+    <Position X="3.5" Y="9.5" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>CheckInputWrapper.cs</FileName>
+      <HashCode>AAAAAEAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+</ClassDiagram>

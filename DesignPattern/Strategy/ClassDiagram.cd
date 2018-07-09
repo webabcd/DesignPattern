@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Font Name="宋体" Size="9" />
+  <Comment CommentText="Message实体类">
+    <Position X="4.406" Y="2.698" Height="0.268" Width="1.023" />
+  </Comment>
+  <Comment CommentText="策略接口">
+    <Position X="3.25" Y="4.487" Height="0.268" Width="0.7" />
+  </Comment>
+  <Comment CommentText="Context">
+    <Position X="2.24" Y="2.302" Height="0.268" Width="0.7" />
+  </Comment>
+  <Comment CommentText="Xml方式操作Message">
+    <Position X="1.313" Y="6.49" Height="0.268" Width="1.346" />
+  </Comment>
+  <Comment CommentText="Sql方式操作Message">
+    <Position X="4.094" Y="6.49" Height="0.268" Width="1.346" />
+  </Comment>
+  <Class Name="DesignPattern.Strategy.MessageModel">
+    <Position X="3.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <FileName>MessageModel.cs</FileName>
+      <HashCode>AAAEAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAIAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPattern.Strategy.SqlMessage">
+    <Position X="0.5" Y="5.25" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>SqlMessage.cs</FileName>
+      <HashCode>AAAAAEAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DesignPattern.Strategy.XmlMessage">
+    <Position X="3.25" Y="5.25" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>XmlMessage.cs</FileName>
+      <HashCode>AAAAAEAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DesignPattern.Strategy.Message">
+    <Position X="0.5" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <FileName>Message.cs</FileName>
+      <HashCode>AAAAAEAAAAAAAABACAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="DesignPattern.Strategy.IMessageStrategy">
+    <Position X="1.75" Y="3.25" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>IMessageStrategy.cs</FileName>
+      <HashCode>AAAAAEAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+</ClassDiagram>

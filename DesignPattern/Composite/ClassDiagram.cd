@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Font Name="宋体" Size="9" />
+  <Comment CommentText="Message实体类">
+    <Position X="2.906" Y="2.688" Height="0.268" Width="1.023" />
+  </Comment>
+  <Comment CommentText="抽象Message实体构件&#xD;&#xA;   （Component）">
+    <Position X="4.333" Y="4.823" Height="0.435" Width="1.398" />
+  </Comment>
+  <Comment CommentText="Message实体树叶（Leaf）">
+    <Position X="0.573" Y="7.698" Height="0.268" Width="1.648" />
+  </Comment>
+  <Comment CommentText="Message实体树枝（Composite）">
+    <Position X="3.427" Y="8.094" Height="0.268" Width="2.002" />
+  </Comment>
+  <Class Name="DesignPattern.Composite.MessageModel">
+    <Position X="1.75" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>MessageModel.cs</FileName>
+      <HashCode>AAAEAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAIAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPattern.Composite.MessageModelComponent">
+    <Position X="1.5" Y="3.25" Width="2.75" />
+    <TypeIdentifier>
+      <FileName>MessageModelComponent.cs</FileName>
+      <HashCode>AAIAIACAEAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPattern.Composite.MessageModelLeaf">
+    <Position X="0.5" Y="6" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>MessageModelLeaf.cs</FileName>
+      <HashCode>AAIAAAAAEAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPattern.Composite.MessageModelComposite">
+    <Position X="2.75" Y="6" Width="2.75" />
+    <TypeIdentifier>
+      <FileName>MessageModelComposite.cs</FileName>
+      <HashCode>AAIAAAAAEAAAAAAAAAAABAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+</ClassDiagram>

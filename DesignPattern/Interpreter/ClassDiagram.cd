@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Font Name="宋体" Size="9" />
+  <Comment CommentText="Message实体类">
+    <Position X="6.896" Y="2.688" Height="0.268" Width="1.023" />
+  </Comment>
+  <Comment CommentText="Sql方式操作Message">
+    <Position X="3.833" Y="1.573" Height="0.268" Width="1.335" />
+  </Comment>
+  <Comment CommentText="Context">
+    <Position X="1.448" Y="2.688" Height="0.268" Width="0.7" />
+  </Comment>
+  <Comment CommentText="终端公式（TerminalExpression）分析与对象相关的">
+    <Position X="2.781" Y="8.376" Height="0.268" Width="3.169" />
+  </Comment>
+  <Comment CommentText="终端公式（TerminalExpression）分析与数据库相关的">
+    <Position X="0.667" Y="6.615" Height="0.268" Width="3.263" />
+  </Comment>
+  <Comment CommentText="终端公式（TerminalExpression）分析与方法相关的">
+    <Position X="4.771" Y="6.615" Height="0.268" Width="3.158" />
+  </Comment>
+  <Comment CommentText="抽象公式（AbstractExpression）">
+    <Position X="4.427" Y="4.584" Height="0.268" Width="2.127" />
+  </Comment>
+  <Class Name="DesignPattern.Interpreter.AbstractExpression">
+    <Position X="2.5" Y="3" Width="3.5" />
+    <TypeIdentifier>
+      <FileName>AbstractExpression.cs</FileName>
+      <HashCode>AAAAAAAEAAgAAAAAgAAAEAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPattern.Interpreter.Context">
+    <Position X="0.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>Context.cs</FileName>
+      <HashCode>AAAAAAAAAAIAAAAAAAAIAAAAEBAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPattern.Interpreter.MessageModel">
+    <Position X="6" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <FileName>MessageModel.cs</FileName>
+      <HashCode>AAAEAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAIAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPattern.Interpreter.SqlMessage">
+    <Position X="3" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>SqlMessage.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPattern.Interpreter.DatabaseExpression">
+    <Position X="0.5" Y="5.25" Width="3.5" />
+    <TypeIdentifier>
+      <FileName>DatabaseExpression.cs</FileName>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <InheritanceLine Type="DesignPattern.Interpreter.AbstractExpression" ManuallyRouted="true">
+      <Path>
+        <Point X="4.25" Y="4.506" />
+        <Point X="4.25" Y="4.945" />
+        <Point X="2.25" Y="4.945" />
+        <Point X="2.25" Y="5.25" />
+      </Path>
+    </InheritanceLine>
+  </Class>
+  <Class Name="DesignPattern.Interpreter.ObjectExpression">
+    <Position X="2.5" Y="7" Width="3.5" />
+    <TypeIdentifier>
+      <FileName>ObjectExpression.cs</FileName>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <InheritanceLine Type="DesignPattern.Interpreter.AbstractExpression" FixedToPoint="true">
+      <Path>
+        <Point X="4.25" Y="4.506" />
+        <Point X="4.25" Y="7" />
+      </Path>
+    </InheritanceLine>
+  </Class>
+  <Class Name="DesignPattern.Interpreter.MethodExpression">
+    <Position X="4.5" Y="5.25" Width="3.5" />
+    <TypeIdentifier>
+      <FileName>MethodExpression.cs</FileName>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <InheritanceLine Type="DesignPattern.Interpreter.AbstractExpression" ManuallyRouted="true">
+      <Path>
+        <Point X="4.25" Y="4.506" />
+        <Point X="4.25" Y="4.945" />
+        <Point X="6.25" Y="4.945" />
+        <Point X="6.25" Y="5.25" />
+      </Path>
+    </InheritanceLine>
+  </Class>
+</ClassDiagram>

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Font Name="宋体" Size="9" />
+  <Comment CommentText="Sql方式操作Message（Originator）">
+    <Position X="0.677" Y="3.021" Height="0.268" Width="2.231" />
+  </Comment>
+  <Comment CommentText="Message实体类&#xD;&#xA; （Memento）">
+    <Position X="4.625" Y="2.688" Height="0.393" Width="1.033" />
+  </Comment>
+  <Comment CommentText="Memento管理者（Caretaker）">
+    <Position X="3.781" Y="4.563" Height="0.268" Width="1.888" />
+  </Comment>
+  <Class Name="DesignPattern.Memento.MessageModelCaretaker">
+    <Position X="3.25" Y="3.5" Width="2.5" />
+    <TypeIdentifier>
+      <FileName>MessageModelCaretaker.cs</FileName>
+      <HashCode>AAAAAACAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="MessageModel" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DesignPattern.Memento.MessageModel">
+    <Position X="3.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <FileName>MessageModel.cs</FileName>
+      <HashCode>AAAEAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAIAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPattern.Memento.SqlMessage">
+    <Position X="0.5" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <FileName>SqlMessage.cs</FileName>
+      <HashCode>AAAEAEAAAAAAAAACEAAAAAAAAAAAAAACEAAAIAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+</ClassDiagram>

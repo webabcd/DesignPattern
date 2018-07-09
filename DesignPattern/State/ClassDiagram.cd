@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Font Name="宋体" Size="9" />
+  <Comment CommentText="Context">
+    <Position X="0.636" Y="2.865" Height="0.268" Width="0.7" />
+  </Comment>
+  <Comment CommentText="Message实体类">
+    <Position X="5.386" Y="2.688" Height="0.268" Width="1.023" />
+  </Comment>
+  <Comment CommentText="状态模式抽象类">
+    <Position X="4.583" Y="4.885" Height="0.268" Width="1.086" />
+  </Comment>
+  <Comment CommentText="Xml方式操作Message">
+    <Position X="1.344" Y="7.708" Height="0.268" Width="1.346" />
+  </Comment>
+  <Comment CommentText="Sql方式操作Message">
+    <Position X="4.854" Y="7.708" Height="0.268" Width="1.346" />
+  </Comment>
+  <Class Name="DesignPattern.State.AbstractMessageState">
+    <Position X="2.25" Y="3.5" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>AbstractMessageState.cs</FileName>
+      <HashCode>AACAAEAAAAAAAABAAAAAAAAAAAAAAAAAEAAAIAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Message" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DesignPattern.State.Message">
+    <Position X="0.5" Y="0.5" Width="3.5" />
+    <TypeIdentifier>
+      <FileName>Message.cs</FileName>
+      <HashCode>AAAAAEAAAAAAAABAAAAAAAgAAAAAAAAIEAAAQAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="AbstractMessageState" />
+    </ShowAsAssociation>
+    <AssociationLine Name="AbstractMessageState" Type="DesignPattern.State.AbstractMessageState">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.713" Y="0.06" />
+      </MemberNameLabel>
+    </AssociationLine>
+  </Class>
+  <Class Name="DesignPattern.State.MessageModel">
+    <Position X="4.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <FileName>MessageModel.cs</FileName>
+      <HashCode>AAAEAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAIAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPattern.State.SqlMessage">
+    <Position X="4" Y="6" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>SqlMessage.cs</FileName>
+      <HashCode>AACAAEAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPattern.State.XmlMessage">
+    <Position X="0.5" Y="6" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>XmlMessage.cs</FileName>
+      <HashCode>AACAAEAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+</ClassDiagram>

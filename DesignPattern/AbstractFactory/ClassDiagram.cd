@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Font Name="宋体" Size="9" />
+  <Comment CommentText="Context">
+    <Position X="5.844" Y="14.656" Height="0.268" Width="0.7" />
+  </Comment>
+  <Comment CommentText="SqlMessage实体类（Product）">
+    <Position X="1.749" Y="5.489" Height="0.268" Width="1.908" />
+  </Comment>
+  <Comment CommentText="SqlMessage工厂（ConcreteFactory）">
+    <Position X="1.594" Y="12.614" Height="0.268" Width="2.335" />
+  </Comment>
+  <Comment CommentText="Xml方式操作Message类（Product）">
+    <Position X="4.281" Y="8.947" Height="0.268" Width="2.2" />
+  </Comment>
+  <Comment CommentText="抽象Message工厂&#xD;&#xA;（AbstractFactory）">
+    <Position X="5.834" Y="10.229" Height="0.372" Width="1.429" />
+  </Comment>
+  <Comment CommentText="操作Message抽象类&#xD;&#xA;（AbstractProduct）">
+    <Position X="5.083" Y="6.52" Height="0.403" Width="1.419" />
+  </Comment>
+  <Comment CommentText="Sql方式操作Message类（Product）">
+    <Position X="1.802" Y="8.948" Height="0.268" Width="2.19" />
+  </Comment>
+  <Comment CommentText="XmlMessage实体类（Product）">
+    <Position X="5" Y="5.49" Height="0.268" Width="1.929" />
+  </Comment>
+  <Comment CommentText="抽象Message实体类&#xD;&#xA;（AbstractProduct）">
+    <Position X="5.583" Y="2.332" Height="0.403" Width="1.398" />
+  </Comment>
+  <Comment CommentText="XmlMessage工厂（ConcreteFactory）">
+    <Position X="5.604" Y="12.615" Height="0.268" Width="2.315" />
+  </Comment>
+  <Class Name="DesignPattern.AbstractFactory.AbstractMessageModel">
+    <Position X="2.75" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <FileName>AbstractMessageModel.cs</FileName>
+      <HashCode>AAAEAAAAAAAAAAAAEAAAAAgAAAAAAAAAEAAAIAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPattern.AbstractFactory.XmlMessageModel">
+    <Position X="4.5" Y="3.5" Width="2.5" />
+    <TypeIdentifier>
+      <FileName>XmlMessageModel.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAIAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <InheritanceLine Type="DesignPattern.AbstractFactory.AbstractMessageModel" ManuallyRouted="true">
+      <Path>
+        <Point X="4.125" Y="2.791" />
+        <Point X="4.125" Y="3.125" />
+        <Point X="5.75" Y="3.125" />
+        <Point X="5.75" Y="3.5" />
+      </Path>
+    </InheritanceLine>
+  </Class>
+  <Class Name="DesignPattern.AbstractFactory.SqlMessageModel">
+    <Position X="1.25" Y="3.5" Width="2.5" />
+    <TypeIdentifier>
+      <FileName>SqlMessageModel.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAIAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <InheritanceLine Type="DesignPattern.AbstractFactory.AbstractMessageModel" ManuallyRouted="true">
+      <Path>
+        <Point X="4.125" Y="2.791" />
+        <Point X="4.125" Y="3.125" />
+        <Point X="2.5" Y="3.125" />
+        <Point X="2.5" Y="3.5" />
+      </Path>
+    </InheritanceLine>
+  </Class>
+  <Class Name="DesignPattern.AbstractFactory.SqlMessage">
+    <Position X="2" Y="7.75" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>SqlMessage.cs</FileName>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPattern.AbstractFactory.XmlMessage">
+    <Position X="4.5" Y="7.75" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>XmlMessage.cs</FileName>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPattern.AbstractFactory.AbstractMessage">
+    <Position X="3.25" Y="6" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>AbstractMessage.cs</FileName>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPattern.AbstractFactory.AbstractMessageFactory">
+    <Position X="2.75" Y="9.5" Width="3" />
+    <TypeIdentifier>
+      <FileName>AbstractMessageFactory.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAACAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPattern.AbstractFactory.SqlMessageFactory">
+    <Position X="0.5" Y="11.25" Width="3.5" />
+    <TypeIdentifier>
+      <FileName>SqlMessageFactory.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAACAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPattern.AbstractFactory.XmlMessageFactory">
+    <Position X="4.5" Y="11.25" Width="3.5" />
+    <TypeIdentifier>
+      <FileName>XmlMessageFactory.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAACAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPattern.AbstractFactory.Message">
+    <Position X="2.75" Y="13.25" Width="3" />
+    <TypeIdentifier>
+      <FileName>Message.cs</FileName>
+      <HashCode>AAAAAEiAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+</ClassDiagram>

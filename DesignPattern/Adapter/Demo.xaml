@@ -1,0 +1,16 @@
+﻿<Page
+    x:Class="DesignPattern.Adapter.Demo"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:DesignPattern.Adapter"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <ScrollViewer Margin="5">
+        <StackPanel HorizontalAlignment="Left">
+            <TextBlock Name="lblMsg" Margin="5" />
+            <Image Source="ClassDiagram.png" Stretch="None" Margin="5" />
+        </StackPanel>
+    </ScrollViewer>
+</Page>
